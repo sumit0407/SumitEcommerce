@@ -1,0 +1,19 @@
+{% extends 'app/base.html' %}{{totalitem}}
+{% load static %}
+{% block title %}Product Detail{% endblock title %}
+{% block main-content %}
+<div class="container my-5">
+ <div class="row">
+  <div class="col-sm-6 text-center align-self-center">
+   <img src="{{x.product_image.url}}" alt="" class="img-fluid img-thumbnail">
+  </div>
+  <!-- <div class="col-sm-5 offset-sm-1"> -->
+      
+
+      <div class="text-center text-primary fw-bold"><small>Plese Login Then Access This Site:<a
+        href="{% url 'login' %}" class="text-danger" >Login Now</a></small></div>
+  </div>
+ </div>
+</div>
+
+{% endblock main-content %}
